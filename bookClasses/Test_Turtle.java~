@@ -1,0 +1,8 @@
+public class Test_Turtle
+{
+  public static void main(String[] args)
+  {
+    World earth = new World();
+    Turtle sean = new Turtle(earth);
+  }
+}

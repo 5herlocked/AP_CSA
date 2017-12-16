@@ -1,0 +1,11 @@
+import java.util.Scanner
+ public class Turtle_in
+{
+  public static void main (String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    
+      
+  World earth = new world();
+  Turtle_yuk = new turtle (80,250);
+  
