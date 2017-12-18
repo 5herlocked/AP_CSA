@@ -46,16 +46,14 @@ public class PitchCount {
 			int pitcherInfoNum = Console.promptInt("What pitchers info do you want?");
 			int averageCount, largest = Integer.MIN_VALUE, smallest = Integer.MAX_VALUE, total, sum = 0;
 
-			for (int i = 0; i < 1; i ++) {
-				for (int j : pitchArray[pitcherInfoNum - 1])
-					largest = (j > largest) ? j : largest;
-				
-				for (int k : pitchArray[pitcherInfoNum - 1])
-					smallest = (k < smallest) ? k : smallest;
-				
-				for (int l : pitchArray[pitcherInfoNum - 1])
-					sum += l;
-			}
+			for (int j : pitchArray[pitcherInfoNum - 1])
+				largest = (j > largest) ? j : largest;
+
+			for (int k : pitchArray[pitcherInfoNum - 1])
+				smallest = (k < smallest) ? k : smallest;
+			
+			for (int l : pitchArray[pitcherInfoNum - 1])
+				sum += l;
 
 			System.out.println (MessageFormat.format("Pitcher #{0} pitched {1} games." + 
 				" His largest pitch count was; {2}, smallest was: {3}, total was: {4}," + 
