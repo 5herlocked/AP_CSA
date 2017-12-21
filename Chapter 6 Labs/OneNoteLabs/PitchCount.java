@@ -41,6 +41,7 @@ public class PitchCount {
 			{79, 107, 53, 79},
 			{11, 9, 3, 63, 20, 18, 3},
 		};
+		
 		String another;
 		do{
 			int pitcherInfoNum = Console.promptInt("What pitchers info do you want?");

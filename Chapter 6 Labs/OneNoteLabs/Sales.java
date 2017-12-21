@@ -8,8 +8,8 @@ import java.text.*;
 public class Sales {
 	public static void main (String... args){
 		System.out.println ("This program tracks the sales of your Salespeople");
-		final double SALESPEOPLE = Console.promptInt("Please enter the number of Salespeople you have:");
-		int[] sales = new int[(int)SALESPEOPLE];
+		final int SALESPEOPLE = Console.promptInt("Please enter the number of Salespeople you have:");
+		int[] sales = new int[SALESPEOPLE];
 		int sum, maxSale = 0, minSale = 0;
 
 		for (int i = 0; i < sales.length; i++) {
@@ -28,17 +28,18 @@ public class Sales {
 		}
 
 		System.out.println ("\nTotal Sales: " + Console.currencyFormat(sum));
-		System.out.println ("Average Sale: " + Console.currencyFormat(sum/SALESPEOPLE));
+		System.out.println ("Average Sale: " + Console.currencyFormat((double)sum/SALESPEOPLE));
 		System.out.println (MessageFormat.format("Salesperson {0} had the highest sale with {1}", maxSale + 1, Console.currencyFormat(sales[maxSale])));
 		System.out.println (MessageFormat.format("Salesperson {0} had the lowest sale with {1}", minSale + 1, Console.currencyFormat(sales[minSale])));
 		int compareTo = Console.promptInt("Please enter the value that your Salespeople should have exceded: ");
 		int count = 0;
 		
-		for (int i = 0; i < sales.length; i++)
+		for (int i = 0; i < sales.length; i++){
 			if (sales[i] > compareTo){
 				System.out.println (MessageFormat.format("Salesperson {0} had more than the target with a sale of {1}", i + 1, Console.currencyFormat(sales[i])));
 				count++;
 			}
+		}
 		System.out.println ("There were " + count + " Salespeople who exceded your target of " + Console.currencyFormat(compareTo));
 	}
 }
