@@ -19,10 +19,11 @@ public class PitchCount {
 
 		//do-while for user based repetition.
 		do{
+			int pitcherInfoNum;
 			do {
-				int pitcherInfoNum = Console.promptInt("What pitchers info do you want?");
-			}
-			while (pitcherInfoNum )
+				pitcherInfoNum = Console.promptInt("What pitchers info do you want");
+			} while (pitcherInfoNum > 5);
+			
 			int averageCount, largest = Integer.MIN_VALUE, smallest = Integer.MAX_VALUE, total, sum = 0;
 
 			//foreach loop to find largest pitch

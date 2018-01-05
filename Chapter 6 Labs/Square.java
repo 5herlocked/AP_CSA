@@ -7,11 +7,13 @@ import console.*;
 import java.util.*;
 
 public class Square {
+	private int size;
 	private int[][] square;
 
 	//creates a new square of a given size
-	public Square (int size) {
-		square = new int[size][size];
+	public Square (int inSize) {
+		size = inSize;
+		square = new int[inSize][inSize];
 	}
 
 	//returns the sum of the values in a row
@@ -26,7 +28,7 @@ public class Square {
 	//returns the sum of the values in a column
 	public int sumCol (int col) {
 		int sum = 0;
-		for (int row = 0; row < 3; row++)
+		for (int row = 0; row < square.length; row++)
 			sum += square[row][col];
 
 		return sum;
@@ -35,8 +37,8 @@ public class Square {
 	//returns sum of the values in the main diagonal
 	public int sumMainDiag () {
 		int sum = 0;
-		for (int row = 0; row <= 2; row++)
-			sum += square[row][row];
+		for (int i = 0; i < square.length; i++)
+			sum += square[i][i];
 
 		return sum;
 	}
@@ -44,8 +46,8 @@ public class Square {
 	//returns the sum of the values in the other diagonal
 	public int sumOtherDiag () {
 		int sum = 0;
-		for (int row = 2; row >= 0; row--)
-			sum += square[row][row];
+		for (int i = square.length - 1; i >= 0; i--)
+			sum += square[i][square.length - 1 - i];
 
 		return sum;
 	}
@@ -57,7 +59,7 @@ public class Square {
 				square[row][col] = inScan.nextInt();
 	}
 
-	//prints the contenst of the sqaure in a neat way
+	//prints the contenst of the sqaure in a neat manner
 	public void printSquare () {
 		for (int total = 0; total < square.length; total++) {
 			for (int row = 0; row < square[total].length; row++)
@@ -67,9 +69,16 @@ public class Square {
 	}
 
 	public boolean magic () {
-		if ((sumCol(0) == sumCol(1) && sumCol(1) == sumCol(2)) == (sumRow(0) == sumRow(1) && sumRow(1) == sumRow(2)) && sumRow(0) == sumMainDiag() && sumMainDiag() == sumOtherDiag())
-			return true;
+		int[] sum = new int[(size*2) + 2]; //sum of rows, sum of cols, sum of the diags
+		sum[(size*2)] = sumMainDiag();
+		sum[(size*2)+1] = sumOtherDiag();
+		System.out.println(Arrays.toString(sum));
+		boolean flag = true;
+		int first = sum[0];
 
-		return false;
+		for (int i = 1; i < sum.length; i++)
+			if (sum[i] != first) flag = false;
+
+		return flag;
 	}
 }

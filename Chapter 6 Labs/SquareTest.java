@@ -3,6 +3,7 @@
 
 import console.*;
 import java.util.*;
+import java.text.*;
 import java.io.*;
 
 public class SquareTest {
@@ -19,10 +20,11 @@ public class SquareTest {
 			System.out.println ("\n***** Square" + count + " *****");
 
 			square.printSquare();
+			for (int i = 0; i < size; i++)
+				System.out.println(MessageFormat.format("The sum of the {0}st Row is " + square.sumRow(i), i+1));
 
-			System.out.println("The sum of the 1st Row is " + square.sumRow(0) + "\nThe sum of the 2nd Row is " +  square.sumRow(1) + "\nThe sum of the 3rd Row is " +  square.sumRow(2));
-
-			System.out.println("The sum of the 1st Column is " + square.sumCol(0) + "\nThe sum of the 2nd Column is " +  square.sumCol(1) + "\nThe sum of the 3rd Column is " +  square.sumCol(2));
+			for (int i = 0; i < size; i++)
+				System.out.println(MessageFormat.format("The sum of the {0}st Column is " + square.sumCol(i), i+1));
 
 			System.out.println("The sum of the main diagonal is " + square.sumMainDiag());
 
