@@ -70,12 +70,17 @@ public class Square {
 
 	public boolean magic () {
 		int[] sum = new int[(size*2) + 2]; //sum of rows, sum of cols, sum of the diags
+		for (int i = 0; i < size*2; i++) {
+			sum[i] = sumCol(i/2);
+			sum[i+1] = sumRow(i/2);
+		}
 		sum[(size*2)] = sumMainDiag();
 		sum[(size*2)+1] = sumOtherDiag();
+
 		System.out.println(Arrays.toString(sum));
+
 		boolean flag = true;
 		int first = sum[0];
-
 		for (int i = 1; i < sum.length; i++)
 			if (sum[i] != first) flag = false;
 
