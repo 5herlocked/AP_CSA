@@ -22,6 +22,7 @@ public class TestNames {
 
 		System.out.println ("Name 1's length is: " + name1.length() + " letters long");
 		System.out.println ("Name 2's length is: " + name2.length() + " letters long");
+		
 		/*
 		switch (Console.promptString("What name do you want to compare to (1/2)?")) {
 			case "1":
