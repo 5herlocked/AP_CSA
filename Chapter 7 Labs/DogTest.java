@@ -10,8 +10,10 @@ public class DogTest {
 	public static void main(String... args) {
 		Labrador lab = new Labrador(Console.promptString("Please enter the name of the Labrador"), Console.promptString("Please enter the colour of the Labrador"));
 		System.out.println(lab.getName() + " says " + lab.speak());
+		System.out.println ("My weight is:" + lab.avgBreedWeight());
 
 		Yorkshire yorky = new Yorkshire(Console.promptString("Please enter the name of the Yorkshire"));
 		System.out.println(yorky.getName() + " says " + yorky.speak());
+		System.out.println ("My weight is: " + yorky.avgBreedWeight());
 	}
 }
