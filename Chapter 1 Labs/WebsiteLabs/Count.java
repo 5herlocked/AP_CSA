@@ -12,7 +12,7 @@ public class Count {
 
 	   System.out.println ("one two three four five"); // English
 	   System.out.println ("un deux trois quatre cinq"); // French
-       System.out.println ("uno dos tres cuatro cinco"); // Spanish
+	   System.out.println ("uno dos tres cuatro cinco"); // Spanish
        
        /*
        If only one slash is in the program, the compiler considers the part after the 
