@@ -32,8 +32,7 @@ public class Shop {
 			cart.add(item);
 
 			// *** print the contents of the cart object using println
-			String contents = "\nShopping Cart\n";
-			contents += "\nItem\t\tUnit Price\tQuantity\tTotal";
+			String contents = "\nShopping Cart\n" + "\nItem\t\tUnit Price\tQuantity\tTotal";
 			System.out.println(contents);
 
 			for (Item i : cart)

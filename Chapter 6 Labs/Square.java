@@ -77,7 +77,7 @@ public class Square {
 		sum[(size*2)] = sumMainDiag();
 		sum[(size*2)+1] = sumOtherDiag();
 
-		System.out.println(Arrays.toString(sum));
+		//System.out.println(Arrays.toString(sum));
 
 		boolean flag = true;
 		int first = sum[0];

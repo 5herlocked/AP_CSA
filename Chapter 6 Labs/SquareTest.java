@@ -8,7 +8,7 @@ import java.io.*;
 
 public class SquareTest {
 	public static void main (String ... args) throws IOException {
-		Scanner scan = new Scanner (new File ("magicData"));
+		Scanner scan = new Scanner (new File ("magicData.txt"));
 
 		int count = 1;
 		int size = scan.nextInt();
@@ -17,7 +17,7 @@ public class SquareTest {
 			Square square = new Square (size);
 			square.readSquare(scan);
 
-			System.out.println ("\n***** Square" + count + " *****");
+			System.out.println ("\n***** Square " + count + " *****");
 
 			square.printSquare();
 			for (int i = 0; i < size; i++)
