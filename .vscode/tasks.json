@@ -7,12 +7,15 @@
 			"label": "javac",
 			"type": "shell",
 			"command": "javac",
+			"showOutput" :"silent",
 			"args": [
 				"\"${file}\""
 			],
 			"problemMatcher": {
 				"owner": "external",
-				"fileLocation": "absolute",
+				"fileLocation": [
+					"absolute"
+				],
 				"pattern": [
 					{
 						"regexp": "^(.+\\.java):(\\d):(?:\\s+(error)):(?:\\s+(.*))$",
