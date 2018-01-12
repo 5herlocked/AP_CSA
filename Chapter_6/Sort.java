@@ -3,7 +3,7 @@ import console.*;
 
 public class Sort {
 	public static void main (String ... args) {
-		int[] nums = {16, 51, 68, 13, 3, 81};
+		int[] nums = {84, 6, 73, 39, 12, 1, 67, 17};
 		
 		///*
 		int min, minIndex;//Selection Sort
