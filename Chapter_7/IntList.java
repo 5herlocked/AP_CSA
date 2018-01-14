@@ -27,12 +27,7 @@ public class IntList
     public void add(int value)
     {
         if (numElements == list.length) {
-            int[] temp = new int[list.length + 6];
-            for (int i = 0; i < list.length; i++)
-                temp[i] = list[i];
-            list = temp;
-            list[numElements] = value;
-            numElements++;
+            System.out.println ("Sorry the list is full");
         }
         else
         {

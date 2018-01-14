@@ -13,6 +13,7 @@ public class SortedIntList extends IntList {
 	}
 
 	//adds an integer to the list
+	/*
 	public void add (int value) {
 		if (numElements == 0) {
 			list[numElements] = value;
@@ -27,16 +28,28 @@ public class SortedIntList extends IntList {
 			numElements++;
 		}
 		else {
-			list[numElements] = value;
-			numElements++;
-			int numTemp = 0;
-			for (int i = 0; i < list.length; i++){
-				for (int c = 0; c < list.length; c++) {
-					if (list[i] < list[c]) {
-						numTemp = list[i];
-						list[i] = list[c];
-						list[c] = numTemp;
+			int temp;
+			for (int i = 1; i < list.length; i++) {
+				for(int j = i ; j > 0 ; j--){
+					if(list[j] < list[j-1]){
+						temp = list[j];
+						list[j] = list[j-1];
+						list[j-1] = temp;
 					}
+				}
+			}
+		}
+	}
+	*/
+
+	public void sort () {
+		int temp;
+		for (int i = 1; i < list.length; i++) {
+			for(int j = i ; j > 0 ; j--){
+				if(list[j] < list[j-1]){
+					temp = list[j];
+					list[j] = list[j-1];
+					list[j-1] = temp;
 				}
 			}
 		}

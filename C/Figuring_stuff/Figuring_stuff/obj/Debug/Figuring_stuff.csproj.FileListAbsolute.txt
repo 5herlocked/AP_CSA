@@ -1,0 +1,7 @@
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\bin\Debug\Figuring_stuff.exe.config
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\bin\Debug\Figuring_stuff.exe
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\bin\Debug\Figuring_stuff.pdb
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\obj\Debug\Figuring_stuff.csprojResolveAssemblyReference.cache
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\obj\Debug\Figuring_stuff.csproj.CoreCompileInputs.cache
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\obj\Debug\Figuring_stuff.exe
+C:\Shardul\AP_CSA\C\Figuring_stuff\Figuring_stuff\obj\Debug\Figuring_stuff.pdb
