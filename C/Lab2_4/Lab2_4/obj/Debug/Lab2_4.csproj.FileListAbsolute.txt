@@ -1,0 +1,7 @@
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\bin\Debug\Lab2_4.exe.config
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\bin\Debug\Lab2_4.exe
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\bin\Debug\Lab2_4.pdb
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\obj\Debug\Lab2_4.csprojResolveAssemblyReference.cache
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\obj\Debug\Lab2_4.csproj.CoreCompileInputs.cache
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\obj\Debug\Lab2_4.exe
+C:\Users\camv7\OneDrive\School Work\12th Grade\AP Computer Science A\C# code for Java Assignments\Lab2_4\Lab2_4\obj\Debug\Lab2_4.pdb

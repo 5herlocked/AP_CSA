@@ -1,7 +1,6 @@
 //uses the square class
 //author: Shardul Vaidya (5herl0cked)
 
-import console.*;
 import java.util.*;
 import java.text.*;
 import java.io.*;
