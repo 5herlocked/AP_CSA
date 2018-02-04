@@ -24,7 +24,7 @@ public class PitchCount {
 				pitcherInfoNum = Console.promptInt("What pitchers info do you want");
 			} while (pitcherInfoNum > 5);
 			
-			int averageCount, largest = Integer.MIN_VALUE, smallest = Integer.MAX_VALUE, total, sum = 0;
+			int largest = pitchArray[pitcherInfoNum-1], smallest = pitchArray[pitcherInfoNum-1], sum = 0;
 
 			//foreach loop to find largest pitch
 			for (int j : pitchArray[pitcherInfoNum - 1])
@@ -39,10 +39,11 @@ public class PitchCount {
 				sum += l;
 
 			//prints using placeholders
-			System.out.println (MessageFormat.format("Pitcher #{0} pitched {1} games." + 
+			System.out.println (MessageFormat.format("Pitcher# {0} pitched {1} games." + 
 				" His largest pitch count was; {2}, smallest was: {3}, total was: {4}," + 
 				" and the average pitch count was: {5}", pitcherInfoNum, pitchArray[pitcherInfoNum-1].length, largest,
 				smallest, sum, (double)sum/pitchArray[pitcherInfoNum-1].length));
+			
 			//terminal val
 			another = Console.promptString("Do you want the information of another pitcher?(y/n)");
 		}while (another.equalsIgnoreCase("y"));

@@ -14,9 +14,7 @@ public class Shopping {
 			System.out.println (cart);
 			another = Console.promptString("Do you want to continue shopping?");
 		} while(another.equalsIgnoreCase("y"));
-
-		System.out.println (cart);
-
+		
 		System.out.println ("Please pay " + Console.currencyFormat(cart.getPrice()));
 	}
 }
