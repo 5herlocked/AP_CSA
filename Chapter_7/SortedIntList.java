@@ -2,9 +2,6 @@
 //author: Shardul Vaidya
 //Date: 10/01/18
 
-import console.*;
-import java.util.*;
-
 public class SortedIntList extends IntList {
 	
 	//constructor
@@ -23,7 +20,7 @@ public class SortedIntList extends IntList {
 			int[] temp = new int[list.length + 6];
 			for (int i = 0; i < list.length; i++)
 				temp[i] = list[i];
-			list = temp;	
+			list = temp;
 			list[numElements] = value;
 			numElements++;
 		}
