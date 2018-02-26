@@ -6,49 +6,49 @@
 
 public class Hourly extends Employee
 {
-   private int hoursWorked;
+	private int hoursWorked;
 
    //-----------------------------------------------------------------
    //  Sets up this hourly employee using the specified information.
    //-----------------------------------------------------------------
-   public Hourly (String eName, String eAddress, String ePhone,
-                  String socSecNumber, double rate)
-   {
-      super (eName, eAddress, ePhone, socSecNumber, rate);
+	public Hourly (String eName, String eAddress, String ePhone,
+		String socSecNumber, double rate)
+	{
+		super (eName, eAddress, ePhone, socSecNumber, rate);
 
-      hoursWorked = 0;
-   }
+		hoursWorked = 0;
+	}
 
    //-----------------------------------------------------------------
    //  Adds the specified number of hours to this employee's
    //  accumulated hours.
    //-----------------------------------------------------------------
-   public void addHours (int moreHours)
-   {
-      hoursWorked += moreHours;
-   }
+	public void addHours (int moreHours)
+	{
+		hoursWorked += moreHours;
+	}
 
    //-----------------------------------------------------------------
    //  Computes and returns the pay for this hourly employee.
    //-----------------------------------------------------------------
-   public double pay()
-   {
-      double payment = getPayRate() * hoursWorked;
+	public double pay()
+	{
+		double payment = (hoursWorked > 40) ? getPayRate() * 40 + (getPayRate() * 1.5 * (hoursWorked - 40)) : getPayRate() * 40;
 
-      hoursWorked = 0;
+		hoursWorked = 0;
 
-      return payment;
-   }
+		return payment;
+	}
 
    //-----------------------------------------------------------------
    //  Returns information about this hourly employee as a string.
    //-----------------------------------------------------------------
-   public String toString()
-   {
-      String result = super.toString();
+	public String toString()
+	{
+		String result = super.toString();
 
-      result += "\nCurrent hours: " + hoursWorked;
+		result += "\nCurrent hours: " + hoursWorked;
 
-      return result;
-   }
+		return result;
+	}
 }
