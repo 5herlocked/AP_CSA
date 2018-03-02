@@ -36,6 +36,7 @@ public class Staff {
 			System.out.println(s + "\n" + ((amount > 0.0) ? "Paid: " + Console.currencyFormat(amount) : "Thanks"));
 			System.out.println("----------------------------------------");
 		}
+		System.out.println ("Payroll created by Payroll Manager: Shardul Vaidya");
 	}
 
 }
