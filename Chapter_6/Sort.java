@@ -3,9 +3,8 @@ import console.*;
 
 public class Sort {
 	public static void main (String ... args) {
-		int[] nums = new int[?];
+		int[] nums = new int[10];
 
-		///*
 		int min, minIndex;//Selection Sort
 
 		for (int i = 0; i < nums.length-1; i++)
@@ -25,7 +24,6 @@ public class Sort {
 			nums[minIndex] = temp;
 			System.out.println (Arrays.toString(nums));
 		}
-		//*/
 		/*
 		for (int i = 0; i < nums.length; i++){ //my sort
 			int temp;

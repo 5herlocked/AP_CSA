@@ -18,7 +18,7 @@ public class Staff {
 		Staff.add(new Commission("Mr. Tahliani", "Atlanta", "12345879", "78945641", 75000));
 		Staff.add(new Commission("Mr. Gluck", "San Fransisco", "4561323", "846512354", 125000));
 		Staff.add(new Volunteer("Mr. Kaplan", "Beijing", "1324567"));
-		Staff.add(new Volunteer("Mr. Kumar", "India", "12345945"));
+		Staff.add(new Volunteer("Mr. Kumar", "Pune", "12345945"));
 		Staff.add(new Commission("Mr. Sharma", "Auticity", "4456897", "3245978", 85000));
 		Staff.add(new Employee("Mr. Vaidya", "Galactica", "12345879", "789456412", 30000));
 
