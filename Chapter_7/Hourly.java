@@ -35,8 +35,6 @@ public class Hourly extends Employee
 	{
 		double payment = (hoursWorked > 40) ? getPayRate() * 40 + (getPayRate() * 1.5 * (hoursWorked - 40)) : getPayRate() * 40;
 
-		hoursWorked = 0;
-
 		return payment;
 	}
 
@@ -48,6 +46,8 @@ public class Hourly extends Employee
 		String result = super.toString();
 
 		result += "\nCurrent hours: " + hoursWorked;
+
+		hoursWorked = 0;
 
 		return result;
 	}
