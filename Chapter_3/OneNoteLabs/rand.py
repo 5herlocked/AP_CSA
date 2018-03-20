@@ -1,8 +1,8 @@
 import math
 
-input_mass = 39.9639
-output_mass = 39.9625
-decay_mass = 0.0005485799
+input_mass = 238.0496
+output_mass = 234.0410
+decay_mass = 4.002603
 
 mass_diff = input_mass - output_mass - decay_mass
 
