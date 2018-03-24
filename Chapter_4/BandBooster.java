@@ -1,4 +1,4 @@
-//BandBooster Pristine Class
+w//BandBooster Pristine Class
 //@author: Shardul Vaidya (5herl0cked)
 //Date: November 15, 2017
 

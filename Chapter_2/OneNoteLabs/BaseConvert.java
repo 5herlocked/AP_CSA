@@ -12,27 +12,25 @@ import java.text.*;
 public class BaseConvert {
 
     private static Scanner inScan = new Scanner (System.in);
-    private static int baseIn = 10;
-    private static int baseOut = 10;
-
-    private static void convert (){
+    
+    private static void convert (int baseIn, int baseOut){
         System.out.println ("Please enter numerical input: ");
         Long rawInput = inScan.nextLong(baseIn);
 
         String outputNum = Long.toString(rawInput, baseOut);
 
-        System.out.print (MessageFormat.format (" (base {0}) is {1} (base{2}).", baseIn, outputNum, baseOut));
+        System.out.print (MessageFormat.format ("(base {0}) is {1} (base{2}).", baseIn, outputNum, baseOut));
     }
     
     public static void main (String...args){
         System.out.println ("This app converts numbers from any base to any base.");
                 
         System.out.println ("Please enter input's base(#): ");
-        baseIn = inScan.nextInt();
+        int baseIn = inScan.nextInt();
 
         System.out.println ("Please enter the output base(#): ");
-        baseOut = inScan.nextInt();
+        int baseOut = inScan.nextInt();
 
-        convert();
+        convert(baseIn, baseOut);
     }
 }

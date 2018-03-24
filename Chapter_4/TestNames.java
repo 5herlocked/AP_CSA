@@ -1,4 +1,4 @@
-//Runner class for Class Name.java
+]//Runner class for Class Name.java
 //@author: Shardul Vaidya (5herl0cked)
 //Date: November 18, 2017
 
