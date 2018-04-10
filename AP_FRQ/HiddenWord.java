@@ -1,3 +1,8 @@
+//AP FRQ for 2015
+//Shardul Vaidya
+//giving hints using char array and String builder to allow user to guess word
+//10/04/2018
+
 public class HiddenWord {
 	private char[] hideString;
 
