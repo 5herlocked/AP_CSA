@@ -1,11 +1,3 @@
-/*
-*  Guess.java                                          Guess
-*
-*  Author: Shardul Vaidya (5herlocked)                  Date:12/9/17
-*
-*  Plays a game with the user that is sure to drive them crazy.
-*/
-
 import java.text.*;
 import java.util.*;
 
