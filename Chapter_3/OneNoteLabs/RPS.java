@@ -1,4 +1,4 @@
-//@author: 5herl0cked
+ //@author: 5herl0cked
 //Pristine Class file for Rock Paper Scissors.
 //Date: November 11, 2017
 
